@@ -9,7 +9,9 @@ import ChatMessages from "./_Components/ChatMessages";
 import { useChat } from "@/utils/use-chat";
 
 function Home(): ReactElement {
-  const [openAiKey, setOpenAiKey] = useState<string>("");
+  const [openAiKey, setOpenAiKey] = useState<string>(
+    "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"
+  );
   const {
     chats,
     isLoading,
