@@ -23,10 +23,10 @@ export async function POST(req: Request): Promise<NextResponse> {
         {
           role: "user",
           content:
-            "Retorne um títulode até 25 caractere para o chat acima. Retorne apenas o título e nada mais",
+            "Retorne um título de até 25 caractere para o chat acima. Retorne apenas o título e nada mais",
         },
       ],
-      model: "llama3-8b-8192",
+      model: "llama3-70b-8192",
     });
 
     newTitle = chatCompletionTitle.choices[0].message.content;
